@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NULL</title>
+    <title>RECONNECTED - Leading Cloud Gaming Service</title>
     <style>
          @font-face {
             font-family: 'D-Din-Regular';
@@ -40,8 +40,9 @@
             box-sizing: border-box;
         }
         body {
-            background-color: #eeeeee;
+            background-color: #181818;
             font-family: 'D-Din-Regular', sans-serif;
+            color: #ffffff;
         }
         #page-wrapper {
             position: relative;
@@ -50,7 +51,7 @@
             list-style: none;
         }
         a {
-            color: #000;
+            color: #ffffff;
             text-decoration: none;
         }
         /** global classes styling **/
@@ -81,7 +82,7 @@
             display: flex;
             justify-content: space-around;
             align-items: center;
-            background-color: #eee;
+            background-color: transparent;
         }
         @media (max-width: 600px) {
             header {
@@ -99,12 +100,12 @@
             }
         }
         .logo > img {
-            width: 100%;
-            height: 100%;
+            width: auto;
+            height: 20px;
             max-width: 300px;
             display: flex;
             justify-content: center;
-            align-items: center;
+            align-items: center;  
             text-align: center;
             margin-left: 20px;
         }
@@ -135,6 +136,10 @@
             display: flex;
             flex-direction: row;
             justify-content: space-around;
+        }
+        nav li {
+            font-family: D-Din-;
+            text-transform: uppercase;
         }
         #hero {
             display: flex;
@@ -305,15 +310,15 @@
             <div class="logo">
                 <img
                     id="header-img"
-                    src="NULL"
-                    alt="NULL"
+                    src="https://raw.githubusercontent.com/risesia/landingpage/main/logo.png"
+                    alt="reconnected logo"
                 />
             </div>
             <nav id="nav-bar">
                 <ul>
-                    <li><a class="nav-link" href="#NULL">NULL</a></li>
-                    <li><a class="nav-link" href="#NULL">NULL</a></li>
-                    <li><a class="nav-link" href="#NULL">NULL</a></li>
+                    <li><a class="nav-link" href="#features">features</a></li>
+                    <li><a class="nav-link" href="#video">games</a></li>
+                    <li><a class="nav-link" href="#pricing">pricing</a></li>
                 </ul>
             </nav>
         </header>
@@ -370,11 +375,13 @@
             <!--features-end-->
             <!--video-start-->
             <section id="how-it-works">
-                <iframe
-                    id="video"
-                    height="315"
-                    src="NULL"
-                    frameborder="0"
+                <iframe 
+                    id="video"  
+                    width="auto" 
+                    height="315" 
+                    src="https://www.youtube.com/embed/rw2k6eNzS4Y" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
                     allowfullscreen
                 ></iframe>
             </section>
