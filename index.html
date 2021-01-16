@@ -6,25 +6,25 @@
     <title>RECONNECTED - Leading Cloud Gaming Service</title>
     <style>
          @font-face {
-            font-family: 'D-Din';
+            font-family: 'D-DIN';
             src: url(../fonts/D-DIN.woff2) format("woff2");
             font-style: normal;
             font-display: block;
         }
         @font-face {
-            font-family: 'D-Din-Bold';
+            font-family: 'D-DIN-Bold';
             src: url(../fonts/D-DIN-Bold.woff2) format("woff2");
             font-style: normal;
             font-display: block;
         }
         @font-face {
-            font-family: 'D-DinCon';
+            font-family: 'D-DINCon';
             src: url(../fonts/D-DINCondensed.woff2) format("woff2");
             font-style: normal;
             font-display: block;
         }
         @font-face {
-            font-family: 'D-DinExp-Bold';
+            font-family: 'D-DINExp-Bold';
             src: url(../fonts/D-DINExp-Bold.woff2) format("woff2");
             font-style: normal;
             font-display: block;
@@ -37,7 +37,7 @@
         }
         body {
             background-color: #181818;
-            font-family: 'D-Din', sans-serif;
+            font-family: 'D-DIN', sans-serif;
             color: #ffffff;
         }
         #page-wrapper {
@@ -134,8 +134,9 @@
             justify-content: space-around;
         }
         nav li {
-            font-family: 'D-DinCon';
+            font-family: 'D-DINCon';
             text-transform: uppercase;
+            font-size: 1.5em;
         }
         #hero {
             display: flex;
@@ -147,8 +148,15 @@
             margin-top: 50px;
         }
         #hero > h2 {
+            font-weight: 100;
+            font-family: 'D-DIN-Bold';
             margin-bottom: 20px;
             word-wrap: break-word;
+            text-transform: uppercase;
+        }
+        #hero form {
+            display: flex;
+            flex-direction: row;
         }
         #hero input[type='email'] {
             max-width: 275px;
@@ -161,10 +169,11 @@
             height: 30px;
             margin: 15px 0;
             border: 0;
-            background-color: #f1c40f;
+            background-color: #7018ff;
+            color: #fff;
         }
         #hero input[type='submit']:hover {
-            background-color: orange;
+            background-color: #8f49ff;
             transition: background-color 1s;
         }
         @media (max-width: 650px) {
@@ -306,7 +315,7 @@
             <div class="logo">
                 <img
                     id="header-img"
-                    src="https://raw.githubusercontent.com/risesia/landingpage/main/logo.png"
+                    src="../images/logo.png"
                     alt="reconnected logo"
                 />
             </div>
@@ -322,7 +331,7 @@
         <div class="container"></div>
         <!--form-start-->
         <section id="hero">
-            <h2>NULL</h2>
+            <h2>play together now!</h2>
             <form id="form" action="NULL">
                 <input
                     name="email"
