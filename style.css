@@ -207,6 +207,7 @@ nav li {
 #features {
     padding-top: 100px;
     margin-top: 30px;
+    margin-bottom: 100px;
     width: 100%;
     padding-left: 200px;
     padding-right: 200px;
@@ -260,53 +261,94 @@ nav li {
         margin-top: 0;
     }
 }
-#how-it-works {
+#games {
+    padding-top: 100px;
     margin-top: 50px;
+    margin-bottom: 100px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
-#how-it-works > iframe {
+#games > iframe {
     max-width: 560px;
     width: 100%;
 }
+#games > h2 {
+    margin-top: 50px;
+    /*
+    font-size: 2.4em;
+    */
+    text-transform: uppercase;
+    font-family: 'D-DINExp-Bold';
+    font-size: 2.1em;
+    font-weight: 100;
+}
+#games > p {
+    margin-top: 5px;
+    font-size: 1.2em;
+    font-weight: 100;
+}
 #pricing {
+    padding-top: 100px;
     margin-top: 60px;
     display: flex;
     flex-direction: row;
     justify-content: center;
+}
+.pr-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: calc(100% / 3);
+    margin: 0 60px;
 }
 .product {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    width: calc(100% / 3);
-    margin: 10px;
-    border: 1px solid #000;
-    border-radius: 3px;
+    width: 100%;
+    border: none;
+    border-radius: 30px;
+    background-color: #fff;
 }
 .product > .level {
-    background-color: #ddd;
-    color: black;
-    padding: 15px 0;
+    color: #7018ff;
+    background-color: transparent;
+    padding: 25px 0 0 0;
     width: 100%;
     text-transform: uppercase;
-    font-weight: 700;
+    font-weight: 100;
+    font-family: 'D-DIN-Bold';
+    font-size: 1.7em;
 }
 .product > h2 {
-    margin-top: 15px;
+    margin-bottom: 15px;
+    color: #000000;
+}
+.product span {
+    font-size: 0.5em;
 }
 .product > ol {
     margin: 15px 0;
 }
 .product > ol > li {
+    text-align: left;
     padding: 5px 0;
+    color: #000000;
 }
-.product > button {
-    border: 0;
+.pr-btn > button {
+    width: 100%;
+    border: none;
+    border-radius: 25px;
     margin: 15px 0;
-    background-color: #f1c40f;
-    font-weight: 400;
+    background-color: #7018ff;
+    font-weight: 100;
+    color: #fff;
+    font-family: 'D-DINExp-Bold';
+    font-size: 1.3em;
 }
 .product > button:hover {
     background-color: orange;
