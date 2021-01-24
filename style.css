@@ -123,12 +123,10 @@ nav {
         text-align: center;
         padding: 0 50px;
     }
-    nav > ul {
-        column-gap: 10px;
-    }
     nav li {
         opacity: 0.7;
         padding-bottom: 5px;
+        margin: 0 5px;
     }
 }
 nav > ul {
@@ -175,13 +173,26 @@ nav li {
     padding: 15px;
 }
 @media (max-width: 650px) {
+    #hero {
+        margin-top: 210px;
+    }
     #hero > h2 {
         font-size: 2em;
     }
+    #hero form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
     #hero input[type='email'] {
-        width: 100%;
+        width: 300px;
         height: 35px;
         padding: 15px;
+    }
+    #hero input[type='submit'] {
+        margin-top: 10px;
+        width: 100%;
     }
 }
 #hero input[type='submit'] {
@@ -198,11 +209,6 @@ nav li {
 #hero input[type='submit']:hover {
     background-color: #8f49ff;
     transition: background-color 1s;
-}
-@media (max-width: 650px) {
-    #hero {
-        margin-top: 120px;
-    }
 }
 #features {
     padding-top: 100px;
@@ -228,10 +234,21 @@ nav li {
     height: 125px;
     width: 20vw;
     color: #7018ff;
+    z-index: -1;
 }
 @media (max-width: 550px) {
+    #features {
+        padding: 100px 10px 0 10px;
+    }
+    #features .grid {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
     #features .icon {
-        display: none;
+        position: relative;
+        top: 60px;
     }
 }
 #features .desc {
@@ -276,9 +293,6 @@ nav li {
 }
 #games > h2 {
     margin-top: 50px;
-    /*
-    font-size: 2.4em;
-    */
     text-transform: uppercase;
     font-family: 'D-DINExp-Bold';
     font-size: 2.1em;
@@ -317,7 +331,7 @@ nav li {
 .product > .level {
     color: #7018ff;
     background-color: transparent;
-    padding: 25px 0 0 0;
+    padding: 20px 0 0 0;
     width: 100%;
     text-transform: uppercase;
     font-weight: 100;
@@ -331,10 +345,11 @@ nav li {
 .product span {
     font-size: 0.5em;
 }
-.product > ol {
-    margin: 15px 0;
+.product > ul {
+    margin: 12px 10px 15px 30px;
 }
-.product > ol > li {
+.product > ul > li {
+    list-style: inherit;
     text-align: left;
     padding: 5px 0;
     color: #000000;
@@ -366,21 +381,21 @@ nav li {
     }
 }
 footer {
-    margin-top: 30px;
-    background-color: #ddd;
+    display: flex;
+    flex-direction: row;
+    margin-top: 100px;
     padding: 20px;
 }
 footer > ul {
     display: flex;
-    justify-content: flex-end;
+    flex-direction: row;
 }
 footer > ul > li {
     padding: 0 10px;
 }
 footer > span {
-    margin-top: 5px;
-    display: flex;
-    justify-content: flex-end;
+    width: 45vw;
+    margin-left: 37px;
     font-size: 0.9em;
-    color: #444;
+    color: rgb(255, 255, 255);
 }
