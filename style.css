@@ -34,6 +34,9 @@
     font-display: block;
 }
 /** global element styling **/
+html {
+    scroll-behavior: smooth;
+}
 * {
     margin: 0;
     padding: 0;
